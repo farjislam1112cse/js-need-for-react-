@@ -1,4 +1,4 @@
-// 6 fandamental of js 
+//  Six JavaScript Fundamentals that you need to know
 
 // ::::1:::::VAR DECLARETION
 // why does declare a variable  using let and const insted var????
@@ -67,7 +67,39 @@ let myvar ="roll";
 console.log(student.roll);
 console.log(student["roll"]);
 console.log(student[myvar]);
+// end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 37-2 Some others importance things
+// 1.template string
+console.log(`my roll was ${student.roll} in diploma` );
+// 2.arrow function declaretion
+// with no parameter
+const arrow_function = ()=>console.log("55");
+// with single parameter
+const arrow_function2=(n) => n+55;
+// with multi  parameter
+const arrow_function3 = (x,y,z) => x+y+z;
+// multi code in arrow function
+const arrow_function4 = (x,y,z) =>{
+}
+// 3.spread oparetor
+// usecse of spread oparetor
+// 1.Copying Arrays:
+const originalArray1 = [1, 2, 3];
+const copyArray = [...originalArray];
+// 2.Combining Arrays::
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const mergedArray = [...array1, ...array2];
+// 3.Adding Elements to an Array:
+const originalArray2 = [1, 2, 3];
+const newArray = [...originalArray, 4, 5];
 
-
-
-
+// Passing Arguments to Functions:
+function add(a, b, c) {
+    return a + b + c;
+  }
+  const numbers = [1, 2, 3];
+  const result = add(...numbers);
+//  5.Destructuring Arrays:
+const [first, ...rest] = [1, 2, 3, 4, 5];
+// first: 1, rest: [2, 3, 4, 5]
