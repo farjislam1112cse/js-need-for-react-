@@ -58,28 +58,28 @@ myFunction()
 // a.3 ways access property by object name
 let student =
 {
-    name: "badhon",   
+    name: "badhon",
     roll: 44432,
     subject: ["math", "computer science"],
     mobile: { brand: "symphoni", model: "4354redbook" }
 }
-let myvar ="roll";
+let myvar = "roll";
 console.log(student.roll);
 console.log(student["roll"]);
 console.log(student[myvar]);
 // end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // 37-2 Some others importance things
 // 1.template string
-console.log(`my roll was ${student.roll} in diploma` );
+console.log(`my roll was ${student.roll} in diploma`);
 // 2.arrow function declaretion
 // with no parameter
-const arrow_function = ()=>console.log("55");
+const arrow_function = () => console.log("55");
 // with single parameter
-const arrow_function2=(n) => n+55;
+const arrow_function2 = (n) => n + 55;
 // with multi  parameter
-const arrow_function3 = (x,y,z) => x+y+z;
+const arrow_function3 = (x, y, z) => x + y + z;
 // multi code in arrow function
-const arrow_function4 = (x,y,z) =>{
+const arrow_function4 = (x, y, z) => {
 }
 // 3.spread oparetor
 // usecse of spread oparetor
@@ -97,9 +97,48 @@ const newArray = [...originalArray, 4, 5];
 // Passing Arguments to Functions:
 function add(a, b, c) {
     return a + b + c;
-  }
-  const numbers = [1, 2, 3];
-  const result = add(...numbers);
+}
+const numbers = [1, 2, 3];
+const result = add(...numbers);
 //  5.Destructuring Arrays:
 const [first, ...rest] = [1, 2, 3, 4, 5];
 // first: 1, rest: [2, 3, 4, 5]
+// end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>nnn
+// 37-3 Array methods (map, forEach, filter and find,includes manually aND EXPLORE FIND VS FILTER)
+let carCollection = [
+    { type: "Fiat", model: "504", color: "white" },
+    { type: "bmw", model: "500", color: "red" },
+    { type: "safari", model: "503", color: "blue" },
+    { type: "mitshubisi", model: "5005", color: "tomato" },
+    { type: "tata", model: "5008", color: "sky blue" },
+    { type: "toyta", model: "5000", color: "black" },
+    { type: "habijubi", model: "5002", color: "assh" }
+]
+
+// using map mathods
+// const getCarModel = carCollection.map(model=> model.)
+// using forEach mathods
+// using filter mathods
+// using find mathods 
+// using includes mathods
+
+
+// array and object distructhing use case 
+
+let arrayDistructhing = [23 , 45, 67, 89 ];
+let num1 = arrayDistructhing[0];
+let num2 = arrayDistructhing[1]
+
+//insted we uses distructhing 
+
+const [x , y]= [23,45,67,89];
+
+
+// 37-5 JSON, Fetch, keys, values, array add or remove using dots
+// 1.fetch 
+fetch ("url")
+.then (res => res.json())
+.then(data => console.log(data))
+
+
+// 37-6 (advanced) truthy, falsy, Ternary operator, shortcut and or
